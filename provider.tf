@@ -1,9 +1,9 @@
-# #Configuring AWS Provider
-# provider aws {
-#     region = "ap-south-1"
-#     access_key = "AKIAU63LPM2AS57L4OPO"
-#     secret_key = "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" 
-# }
+#Configuring AWS Provider
+provider aws {
+    region = "ap-south-1"
+    access_key = "AKIAU63LPM2AS57L4OPO"
+    secret_key = "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" 
+}
 
 # #Variable for Environment
 # variable "env" {
