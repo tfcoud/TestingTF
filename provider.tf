@@ -5,6 +5,15 @@ provider aws {
     secret_key = "Nli4aYsOGyo3C17yHPHb6ZUdA2O/PqK/4p9uNpVm" 
 }
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+
 # #Variable for Environment
 # variable "env" {
 #     description = "You want these resources in which environment?"
