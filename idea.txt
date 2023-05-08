@@ -1,0 +1,27 @@
+#First part
+
+to create onw vpc and 1subnet 
+for this we want variables as 
+1. cidr_block for vpc
+2. cidr_block for subnet
+3. avilability zone var
+4. environment variabke as such {dev, staging, prod}
+
+#Second part
+
+to create custom route tabe and internet gateway
+1. creating igw for our vpc...as defaut vpc have default igw
+2. getting this newly created igw as record in our route table.
+default route table have d-vpc enrty and d-igw entry, so we need to add igw in ths tb.
+
+#Third part
+
+our subnet wasnt associated with any route table explicitly, so we need to make an associateion between route table and subnet
+
+#Fourth part
+
+ways to use route table--default and custom-----vpc config and internet gateway config
+
+#Fifth part
+
+security group creation for defining inbound and outbound traffic.

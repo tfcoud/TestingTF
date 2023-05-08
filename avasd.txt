@@ -1,0 +1,27 @@
+Personal access Token;  glpat-65zgvGypTLt8Jq5p81zh
+Feed tocken FbG-8D4eZyeyPUTaQTVy
+incoming email token 5vebene67nvg2nbgdcqpwrozh
+
+export PROJECT_ID="44830520"
+export TF_USERNAME="pixiii"
+export TF_PASSWORD="<glpat-65zgvGypTLt8Jq5p81zh>"
+export TF_ADDRESS="https://gitlab.com/api/v4/projects/${PROJECT_ID}/terraform/state/tf_state"
+
+
+terraform init \
+  -backend-config=address=${TF_ADDRESS} \
+  -backend-config=lock_address=${TF_ADDRESS}/lock \
+  -backend-config=unlock_address=${TF_ADDRESS}/lock \
+  -backend-config=username=${TF_USERNAME} \
+  -backend-config=password=${TF_PASSWORD} \
+  -backend-config=lock_method=POST \
+  -backend-config=unlock_method=DELETE \
+  -backend-config=retry_wait_min=5
+
+
+terraform cloud token
+
+8GWYCYL8hcjsYg.atlasv1.VKGks1aqUrtR0bCl8K0f8wPOOuzW179Gzv4kzraKbva1quIMTrCOLtzIyPLtNdy9zc4
+
+
+
